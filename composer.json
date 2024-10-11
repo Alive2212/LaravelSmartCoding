@@ -1,0 +1,41 @@
+{
+    "name": "alive2212/laravel-smart-coding",
+    "description": ":package_description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "author name",
+            "email": "author email",
+            "homepage": "author homepage"
+        }
+    ],
+    "homepage": "https://github.com/alive2212/laravel-smart-coding",
+    "keywords": ["Laravel", "LaravelSmartCoding"],
+    "require": {
+        "illuminate/support": ">=8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=9.0",
+        "orchestra/testbench": ">=6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alive2212\\LaravelSmartCoding\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alive2212\\LaravelSmartCoding\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alive2212\\LaravelSmartCoding\\LaravelSmartCodingServiceProvider"
+            ],
+            "aliases": {
+                "LaravelSmartCoding": "Alive2212\\LaravelSmartCoding\\Facades\\LaravelSmartCoding"
+            }
+        }
+    }
+}
